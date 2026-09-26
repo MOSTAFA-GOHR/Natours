@@ -60,7 +60,7 @@ if (formudateData) {
 
 
 if (formUpdatePassword) {
-  console.log('hello from update password')
+  // console.log('hello from update password')
   formUpdatePassword.addEventListener('submit', async (e) => {
     e.preventDefault();
     const currentPassword = document.querySelector('#password-current').value;

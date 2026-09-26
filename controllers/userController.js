@@ -97,7 +97,7 @@ exports.updateMe = catchAsync(async (req, res, next) => {
 
 	//2)Fileted out unwanted fields name that not allowed to be update
 	const filterBody = filterObj(req.body, 'name', 'email');
-	console.log(req.file)
+	// console.log(req.file)
 	if (req.file) filterBody.photo = req.file.filename;
 
 	//3)update user document

@@ -19,6 +19,7 @@ const viewRouter = require('./routes/viewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 //parse the query
 const qs = require('qs');
+const compression = require('compression')
 
 
 //parser the query data in http
@@ -119,7 +120,7 @@ app.use((req, res, next) => {
   next();
 });
 
-
+app.use(compression());
 
 //3)ROUTE REQUESTS////////////////////////////////////////
 

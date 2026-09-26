@@ -131,7 +131,7 @@ tourSchema.pre(/^find/, function () {
 })
 
 tourSchema.post('save', function (doc, next) {
-	console.log(doc);
+	// console.log(doc);
 	next()
 })
 
